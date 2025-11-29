@@ -1,0 +1,162 @@
+:root {
+  --primary: #3c2a21;
+  --outline-col: #303841;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FFF2C2;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0.5rem ;
+  font-family: Arial, sans-serif;
+  background-color: #FFF2C2;
+ 
+}
+
+
+
+/* hero section */
+.hero {
+  display: flex;
+  flex-direction: column; /* urutan dari atas ke bawah */
+  align-items: center; /* center horizontal */
+  text-align: center; /* center teks */
+  margin-top: 20px;
+position: relative;
+}
+
+.hero .content {
+  margin-top: 10px; /* jarak kecil antara gambar dan tulisan */
+  font-size: 20px;
+  font-weight: bold;
+  color: #3c2a21;
+  outline-color: #303841;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* button section */
+.menu-btn {
+  margin-top: 1rem;
+  /* padding-top: 3rem; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0;
+}
+.menu-btn p {
+  margin: 2rem;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.menu-btn a {
+display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #25d366;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* menu section */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+  color: var(--primary);
+  outline-color: var(--outline-col);
+  font-weight: bold;
+}
+
+.row .menu-card {
+  /* margin: 0; */
+  padding: 3rem;
+  justify-content: center;
+}
+
+.row .menu-card-img {
+  border-radius: 50%;
+  width: 120px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.row .menu-card:hover img, .hero .content:hover{
+  transform: scale(1.5);
+}
+.menu-btn a:hover {
+    color: black;
+    transform: scale(1.05);
+}
+
+.row .menu-card h3,
+.row .menu-card h4 {
+  margin-top: 1rem auto 0.5rem;
+  text-align: center;
+}
+
+.row .menu-card .menu-card-price {
+  text-align: center;
+  /* padding-bottom: 1rem; */
+  /* margin: auto; */
+}
+
+.menu-card-dot {
+  text-align: center;
+  /* padding: 1rem; */
+  /* margin: auto; */
+}
+
+/* media queries */
+/* Laptop*/
+/* @media (max-width: 13666px) {
+  html {
+    font-size: 80%;
+  }
+} */
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .row .menu-card {
+  /* margin: 0; */
+  padding: 7.3rem;
+  justify-content: center;
+}
+.row .menu-card:hover img{
+  transform: scale(1.3);
+}
+
+
+}
+
+/* Mobile phone*/
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
